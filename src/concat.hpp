@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_CONCAT_HPP
+#define CUTIL_CONCAT_HPP
 #include <cstring>
 #include <vector>
 
@@ -16,3 +17,5 @@ auto concat(const auto& a, const auto& b) -> std::vector<T> {
     std::memcpy(ret.data() + a.size(), b.data(), b.size() * sizeof(T));
     return ret;
 }
+
+#endif // CUTIL_CONCAT_HPP

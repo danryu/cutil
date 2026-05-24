@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_CONTAINER_OF_HPP
+#define CUTIL_CONTAINER_OF_HPP
 #include <bit>
 #include <cstddef>
 
@@ -12,3 +13,5 @@ auto container_of(Member* const ptr, const Member Container::* member) -> Contai
 
     return std::bit_cast<Container*>(std::bit_cast<std::byte*>(ptr) - OffsetOf::offset_of(member));
 }
+
+#endif // CUTIL_CONTAINER_OF_HPP

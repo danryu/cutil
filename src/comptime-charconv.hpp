@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_COMPTIME_CHARCONV_HPP
+#define CUTIL_COMPTIME_CHARCONV_HPP
 #include <cstdint>
 
 #include "comptime-string.hpp"
@@ -27,3 +28,5 @@ constexpr auto to_string_fn() -> auto {
 template <auto num>
 constexpr auto to_string = to_string_fn<num>();
 } // namespace comptime
+
+#endif // CUTIL_COMPTIME_CHARCONV_HPP

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_RCU_HPP
+#define CUTIL_RCU_HPP
 #include <atomic>
 #include <thread>
 #include <utility>
@@ -72,3 +73,5 @@ struct RCU {
         return {AutoLock{data}, data->data};
     }
 };
+
+#endif // CUTIL_RCU_HPP

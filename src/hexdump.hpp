@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_HEXDUMP_HPP
+#define CUTIL_HEXDUMP_HPP
 #include <print>
 #include <span>
 
@@ -28,3 +29,5 @@ inline auto dump_hex(const T& data) -> void {
 inline auto dump_hex(const void* const ptr, const size_t len) -> void {
     dump_hex(std::span{std::bit_cast<std::byte*>(ptr), len});
 }
+
+#endif // CUTIL_HEXDUMP_HPP

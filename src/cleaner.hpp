@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_CLEANER_HPP
+#define CUTIL_CLEANER_HPP
 #include <type_traits>
 
 template <class T>
@@ -10,3 +11,5 @@ struct Cleaner {
         func();
     }
 };
+
+#endif // CUTIL_CLEANER_HPP

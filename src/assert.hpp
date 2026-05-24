@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_ASSERT_HPP
+#define CUTIL_ASSERT_HPP
 #include <print>
 #include <string>
 
@@ -18,3 +19,5 @@ auto dynamic_assert(const bool cond, const std::format_string<Args...> format = 
         panic(format, args...);
     }
 }
+
+#endif // CUTIL_ASSERT_HPP

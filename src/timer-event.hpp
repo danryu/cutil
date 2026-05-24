@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_TIMER_EVENT_HPP
+#define CUTIL_TIMER_EVENT_HPP
 #include <condition_variable>
 
 #include "critical.hpp"
@@ -27,3 +28,5 @@ struct TimerEvent {
         cv.notify_all();
     }
 };
+
+#endif // CUTIL_TIMER_EVENT_HPP

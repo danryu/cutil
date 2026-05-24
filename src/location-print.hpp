@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_LOCATION_PRINT_HPP
+#define CUTIL_LOCATION_PRINT_HPP
 #include <print>
 
 #include "comptime-string.hpp"
@@ -124,3 +125,5 @@ auto location_print(const std::format_string<Args...> format, Args&&... args) ->
     std::print(out, "{} @ {}:{} ", short_function.str(), short_filename.str(), line);
     std::println(out, format, std::forward<Args>(args)...);
 }
+
+#endif // CUTIL_LOCATION_PRINT_HPP

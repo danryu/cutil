@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_LOGGER_PRE_HPP
+#define CUTIL_LOGGER_PRE_HPP
 #include <optional>
 #include <string>
 
@@ -22,3 +23,5 @@ struct Logger {
     Logger() = default;
     Logger(std::string name);
 };
+
+#endif // CUTIL_LOGGER_PRE_HPP

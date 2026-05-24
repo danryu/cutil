@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_ERROR_HPP
+#define CUTIL_ERROR_HPP
 #include <string>
 
 class StringError {
@@ -17,3 +18,5 @@ class StringError {
     StringError() = default;
     StringError(std::string_view what) : what(what) {}
 };
+
+#endif // CUTIL_ERROR_HPP

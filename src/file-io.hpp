@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_FILE_IO_HPP
+#define CUTIL_FILE_IO_HPP
 #include <fstream>
 #include <optional>
 #include <span>
@@ -38,3 +39,5 @@ inline auto write_file(const char* const path, const std::span<const std::byte> 
 
     return true;
 }
+
+#endif // CUTIL_FILE_IO_HPP

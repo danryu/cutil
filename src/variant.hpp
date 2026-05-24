@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_VARIANT_HPP
+#define CUTIL_VARIANT_HPP
 #include <algorithm>
 #include <bit>
 #include <optional>
@@ -229,3 +230,5 @@ class Variant {
         reset();
     }
 };
+
+#endif // CUTIL_VARIANT_HPP

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_ARGUMENT_PARSER_HPP
+#define CUTIL_ARGUMENT_PARSER_HPP
 #include <print>
 #include <ranges>
 #include <string_view>
@@ -305,3 +306,5 @@ using Parser = GenericParser<bool, int, double, CStr, Ts...>;
 #pragma pop_macro("bail")
 
 } // namespace args
+
+#endif // CUTIL_ARGUMENT_PARSER_HPP

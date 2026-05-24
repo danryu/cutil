@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_RANDOM_HPP
+#define CUTIL_RANDOM_HPP
 #include <array>
 #include <random>
 #include <span>
@@ -63,3 +64,5 @@ struct RandomEngine {
         : engine((std::random_device())()) {
     }
 };
+
+#endif // CUTIL_RANDOM_HPP

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_WRITERS_READER_BUFFER_HPP
+#define CUTIL_WRITERS_READER_BUFFER_HPP
 #include <atomic>
 #include <vector>
 
@@ -30,3 +31,5 @@ class WritersReaderBuffer {
         return data;
     }
 };
+
+#endif // CUTIL_WRITERS_READER_BUFFER_HPP

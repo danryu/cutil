@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_THREAD_POOL_HPP
+#define CUTIL_THREAD_POOL_HPP
 #include <array>
 #include <thread>
 
@@ -43,3 +44,5 @@ struct CustomDataThreadPool : ThreadPool<N> {
         }
     }
 };
+
+#endif // CUTIL_THREAD_POOL_HPP

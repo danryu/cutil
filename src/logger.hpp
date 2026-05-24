@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_LOGGER_HPP
+#define CUTIL_LOGGER_HPP
 #include <chrono>
 #include <cstdlib>
 #include <mutex>
@@ -93,3 +94,5 @@ inline auto Logger::set_name_and_detect_loglevel(std::string name) -> void {
 inline Logger::Logger(std::string name) {
     set_name_and_detect_loglevel(std::move(name));
 }
+
+#endif // CUTIL_LOGGER_HPP

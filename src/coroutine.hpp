@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_COROUTINE_HPP
+#define CUTIL_COROUTINE_HPP
 #include <coroutine>
 #include <exception>
 #include <utility>
@@ -83,3 +84,5 @@ struct CoRoutine {
         return generator.handle.done();
     }
 };
+
+#endif // CUTIL_COROUTINE_HPP

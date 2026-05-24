@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_COMPTIME_STRING_HPP
+#define CUTIL_COMPTIME_STRING_HPP
 #include <algorithm>
 #include <array>
 #include <string_view>
@@ -192,3 +193,5 @@ constexpr auto remove_region_fn() -> auto {
 template <String str, char open, char close>
 constexpr auto remove_region = remove_region_fn<str, open, close>();
 } // namespace comptime
+
+#endif // CUTIL_COMPTIME_STRING_HPP

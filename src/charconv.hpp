@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_CHARCONV_HPP
+#define CUTIL_CHARCONV_HPP
 #include <charconv>
 #include <cstdlib>
 #include <optional>
@@ -33,3 +34,5 @@ auto from_chars(const std::string_view str) -> std::optional<T> {
     }
     */
 }
+
+#endif // CUTIL_CHARCONV_HPP

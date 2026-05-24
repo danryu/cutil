@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_TRIM_HPP
+#define CUTIL_TRIM_HPP
 #include <string_view>
 
 inline auto ltrim(std::string_view str) -> std::string_view {
@@ -18,3 +19,5 @@ inline auto rtrim(std::string_view str) -> std::string_view {
 inline auto trim(std::string_view str) -> std::string_view {
     return rtrim(ltrim(str));
 }
+
+#endif // CUTIL_TRIM_HPP

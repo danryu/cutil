@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_LIGHT_MAP_HPP
+#define CUTIL_LIGHT_MAP_HPP
 #include <vector>
 
 template <class K, class V>
@@ -51,3 +52,5 @@ struct LightMap {
         }
     }
 };
+
+#endif // CUTIL_LIGHT_MAP_HPP

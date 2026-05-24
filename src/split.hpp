@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_SPLIT_HPP
+#define CUTIL_SPLIT_HPP
 #include <cctype>
 #include <string_view>
 #include <utility>
@@ -66,3 +67,5 @@ inline auto split_like_shell(const std::string_view str) -> std::vector<std::str
     // internal::dynamic_assert(qot == '\0', "unclosed quotes");
     return result;
 }
+
+#endif // CUTIL_SPLIT_HPP

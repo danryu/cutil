@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_MULTI_EVENT_HPP
+#define CUTIL_MULTI_EVENT_HPP
 #include "event.hpp"
 
 // Multiple Waiters / Single Notifier
@@ -44,3 +45,5 @@ class MultiEvent {
 
     MultiEvent(const MultiEvent&) {}
 };
+
+#endif // CUTIL_MULTI_EVENT_HPP

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_STRING_MAP_HPP
+#define CUTIL_STRING_MAP_HPP
 #include <functional>
 #include <string>
 #include <string_view>
@@ -26,3 +27,5 @@ struct StringHash {
 // .insert() not supported yet(P2363)
 template <class T>
 using StringMap = std::unordered_map<std::string, T, internal::StringHash, std::ranges::equal_to>;
+
+#endif // CUTIL_STRING_MAP_HPP

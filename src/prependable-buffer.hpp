@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_PREPENDABLE_BUFFER_HPP
+#define CUTIL_PREPENDABLE_BUFFER_HPP
 #include <cstring>
 #include <span>
 #include <vector>
@@ -111,3 +112,5 @@ auto PrependableBuffer::prepend_object(const T& obj) -> PrependableBuffer&& {
     std::memcpy(span.data(), &obj, span.size());
     return std::move(*this);
 }
+
+#endif // CUTIL_PREPENDABLE_BUFFER_HPP

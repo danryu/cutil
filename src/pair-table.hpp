@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_PAIR_TABLE_HPP
+#define CUTIL_PAIR_TABLE_HPP
 #include <array>
 #include <cstddef>
 
@@ -33,3 +34,5 @@ auto make_pair_table(std::pair<T, U> (&&values)[N]) -> PairTable<T, U, N> {
         .array = std::to_array(values),
     };
 }
+
+#endif // CUTIL_PAIR_TABLE_HPP

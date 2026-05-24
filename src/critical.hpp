@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_CRITICAL_HPP
+#define CUTIL_CRITICAL_HPP
 #include <mutex>
 #include <optional>
 
@@ -61,3 +62,5 @@ class Critical {
     Critical(Args&&... args) : data(std::move(args)...) {}
     Critical() {}
 };
+
+#endif // CUTIL_CRITICAL_HPP

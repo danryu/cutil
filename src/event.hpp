@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_EVENT_HPP
+#define CUTIL_EVENT_HPP
 #include <atomic>
 
 // Single Waiter / Multiple Notifiers
@@ -21,3 +22,5 @@ class Event {
 
     Event(const Event&) {}
 };
+
+#endif // CUTIL_EVENT_HPP

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_FD_HPP
+#define CUTIL_FD_HPP
 #include <cstdint>
 #include <optional>
 #include <utility>
@@ -106,3 +107,5 @@ class FileDescriptor {
         close();
     }
 };
+
+#endif // CUTIL_FD_HPP

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUTIL_EVENT_FD_HPP
+#define CUTIL_EVENT_FD_HPP
 #include <poll.h>
 #include <sys/eventfd.h>
 
@@ -36,3 +37,5 @@ class EventFileDescriptor {
 
     EventFileDescriptor() : fd(eventfd(0, 0)) {}
 };
+
+#endif // CUTIL_EVENT_FD_HPP
